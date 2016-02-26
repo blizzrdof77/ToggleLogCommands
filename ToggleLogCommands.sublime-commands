@@ -1,0 +1,4 @@
+[
+    { "caption": "ToggleLogCommands: Turn Logging of Commands in Sublime Console On", "command": "toggle_log_commands_on" },
+    { "caption": "ToggleLogCommands: Turn Logging of Commands in Sublime Console Off", "command": "toggle_log_commands_off" }
+]

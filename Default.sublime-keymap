@@ -1,0 +1,12 @@
+[
+    /* Toggle Log Commands (On) */
+    { 
+        "keys": ["super+k", "super+k", "super+l"],
+        "command" : "toggle_log_commands_on" 
+    },
+    /* Toggle Log Commands (Off) */
+    { 
+        "keys": ["super+shift+k", "super+shift+k", "super+shift+l"],
+        "command": "toggle_log_commands_off"
+    },
+]

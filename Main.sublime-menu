@@ -1,0 +1,51 @@
+[
+    {
+        "id": "tools",
+        "caption": "Tools",
+        "children":
+        [
+            {   
+                "caption": "ToggleLogCommands",
+                "children":
+                [
+                    {
+                        "caption": "Turn Command Logging On",
+                        "command": "toggle_log_commands_on"
+                    },
+                    {
+                        "caption": "Turn Command Logging Off",
+                        "command": "toggle_log_commands_off"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "caption": "Preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "ToggleLogCommands",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/ToggleLogCommands/Default.sublime-keymap"
+                                },
+                                "caption": "Key Bindings – Default"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    } 
+]
