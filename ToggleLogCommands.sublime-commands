@@ -1,4 +1,14 @@
 [
-    { "caption": "ToggleLogCommands: Turn Logging of Commands in Sublime Console On", "command": "toggle_log_commands_on" },
-    { "caption": "ToggleLogCommands: Turn Logging of Commands in Sublime Console Off", "command": "toggle_log_commands_off" }
+	{
+	    "caption": "ToggleLogCommands: Toggle Command & Event Console Logging (Switch On/Off)",
+	    "command": "toggle_log_commands"
+	},
+	{
+	    "caption": "ToggleLogCommands: Enable Command & Event Console Logging (Switch On)",
+	    "command": "toggle_log_commands_on"
+	},
+	{
+	    "caption": "ToggleLogCommands: Disable Command & Event Console Logging (Switch Off)",
+	    "command": "toggle_log_commands_off"
+	}
 ]
