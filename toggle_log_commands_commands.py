@@ -1,14 +1,17 @@
 import sublime, sublime_plugin
 
 class ToggleLogCommandsCommand(sublime_plugin.TextCommand):
-    def run(self, edit):
-        toggle_on = (self.settings().get("log_commands") == False)
-        sublime.message_dialog(str(toggle_on))
+    def run(self, edit, toggle_state=None):
+        if toggle_state is None:
+            toggle_state = (self.view.settings().get("log_commands") == False)
+        sublime.log_commands(toggle_state)
+        self.view.settings().set("log_commands", toggle_state)
+        sublime.active_window().run_command("show_panel", {"panel": "console", "toggle": (not toggle_state)})
 
 class ToggleLogCommandsOnCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        sublime.log_commands(True)
+        ToggleLogCommandsCommand.run(self, edit, True)
 
 class ToggleLogCommandsOffCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        sublime.log_commands(False)
+        ToggleLogCommandsCommand.run(self, edit, False)
